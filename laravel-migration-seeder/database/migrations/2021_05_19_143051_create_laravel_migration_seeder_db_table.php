@@ -16,6 +16,12 @@ class CreateLaravelMigrationSeederDbTable extends Migration
         Schema::create('laravel_migration_seeder_db', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->date('date');
+            $table->string("destination");
+            $table->string('country');
+            $table->smallInteger('people');
+            $table->string('category');
+            $table->float('price');
         });
     }
 
